@@ -100,4 +100,9 @@ class Teacher extends Model
     {
         return $this->hasMany(\App\Models\Course::class);
     }
+
+    public function students()
+    {
+        return Student::first();
+    }
 }
